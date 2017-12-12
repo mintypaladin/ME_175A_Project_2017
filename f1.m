@@ -13,5 +13,3 @@ elseif strcmp(factor,'P/F')==1
 else
     disp('Error')
 end
-
-disp(out)   
