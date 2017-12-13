@@ -31,6 +31,12 @@ i = d*((x+y)-1);
 
 new_marr = marr.*(1+i);
 
+% new_marr = marr.*dev_fac;
+
+
+% hist(new_marr)
+
+
 % Each of the 4 scenarios 
 pv1=0; pv2=0; pv3=0; pv4=0; % Initialize all present values as 0
 
@@ -51,7 +57,7 @@ for b=1:n
 end
 
 % output cell
-out = {'Patent Lawyer' , mean(pv1) , 'Â±', 1.96*std(pv1); 'Missionary', mean(pv2) , 'Â±', 1.96*std(pv2); 'Physics Teacher' mean(pv3) , 'Â±', 1.96*std(pv3); 'Software Dev' mean(pv4) , 'Â±', 1.96*std(pv4)};
+out = {'Patent Lawyer' , mean(pv1) , '±', 1.96*std(pv1); 'Missionary', mean(pv2) , '±', 1.96*std(pv2); 'Physics Teacher' mean(pv3) , '±', 1.96*std(pv3); 'Software Dev' mean(pv4) , '±', 1.96*std(pv4)};
 
 disp(out)
 
